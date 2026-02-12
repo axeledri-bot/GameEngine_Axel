@@ -14,4 +14,8 @@ public class Sonidos
 
     [HideInInspector]
     public AudioSource audioSource;
+
+    //public Sprite[] prit;
+    //public int decena = 5;
+    //public int unidad = 9;
 }
