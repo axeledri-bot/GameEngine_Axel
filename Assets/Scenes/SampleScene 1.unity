@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &33816392
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -162,8 +162,8 @@ Rigidbody:
   m_GameObject: {fileID: 33816390}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -175,8 +175,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -228,7 +228,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -269,12 +269,166 @@ Transform:
   m_GameObject: {fileID: 33816390}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.23046406, w: 0.9730809}
-  m_LocalPosition: {x: -6.052185, y: 25.754002, z: -50.32}
-  m_LocalScale: {x: 1.4429296, y: 1.8899493, z: 1.6421982}
+  m_LocalPosition: {x: -4.4529, y: 16.352, z: -50.251}
+  m_LocalScale: {x: 0.94658446, y: 1.2398363, z: 1.0773078}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -26.649}
+--- !u!1 &37817646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 37817652}
+  - component: {fileID: 37817651}
+  - component: {fileID: 37817650}
+  - component: {fileID: 37817649}
+  - component: {fileID: 37817648}
+  - component: {fileID: 37817647}
+  m_Layer: 8
+  m_Name: enemigo (25)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &37817647
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37817646}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &37817648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37817646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &37817649
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37817646}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &37817650
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37817646}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &37817651
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37817646}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &37817652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37817646}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.385, y: 15.854, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.5375209, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &88136166
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 2000
+  vida: 100
 --- !u!54 &107469710
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -490,8 +644,8 @@ Rigidbody:
   m_GameObject: {fileID: 107469708}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -503,8 +657,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -554,7 +708,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -595,8 +749,8 @@ Transform:
   m_GameObject: {fileID: 107469708}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.19, y: 27.03, z: -50.4}
-  m_LocalScale: {x: 1.8641874, y: 1.8641874, z: 1.8641874}
+  m_LocalPosition: {x: 2.2663, y: 17.19, z: -50.304}
+  m_LocalScale: {x: 1.2229362, y: 1.2229362, z: 1.2229362}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -825,8 +979,8 @@ Rigidbody:
   m_GameObject: {fileID: 111219694}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -838,8 +992,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -855,7 +1009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &111219697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -943,8 +1097,8 @@ Transform:
   m_GameObject: {fileID: 111219694}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.119494274, w: 0.9928349}
-  m_LocalPosition: {x: -2.93, y: 23.67, z: -50.39}
-  m_LocalScale: {x: 3.5110674, y: 9.692496, z: 2.4754763}
+  m_LocalPosition: {x: -2.4046, y: 14.985001, z: -50.297}
+  m_LocalScale: {x: 2.3033152, y: 6.3584294, z: 1.6239512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -982,7 +1136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 2000
+  vida: 100
 --- !u!54 &131868694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -992,8 +1146,8 @@ Rigidbody:
   m_GameObject: {fileID: 131868692}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1005,8 +1159,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1056,7 +1210,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1097,8 +1251,8 @@ Transform:
   m_GameObject: {fileID: 131868692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.64, y: 27.03, z: -50.4}
-  m_LocalScale: {x: 1.8641874, y: 1.8641874, z: 1.8641874}
+  m_LocalPosition: {x: -4.1824, y: 17.19, z: -50.304}
+  m_LocalScale: {x: 1.2229362, y: 1.2229362, z: 1.2229362}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1136,7 +1290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &166228303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1146,8 +1300,8 @@ Rigidbody:
   m_GameObject: {fileID: 166228301}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1159,8 +1313,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1212,7 +1366,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1253,8 +1407,8 @@ Transform:
   m_GameObject: {fileID: 166228301}
   serializedVersion: 2
   m_LocalRotation: {x: -0.011184325, y: 0.0033938708, z: -0.000049210365, w: 0.99993175}
-  m_LocalPosition: {x: -0.85, y: 30.83, z: -49.71}
-  m_LocalScale: {x: 2.6679382, y: 1.8389794, z: 2.8672233}
+  m_LocalPosition: {x: -1.0401, y: 19.682, z: -49.851}
+  m_LocalScale: {x: 1.7502093, y: 1.2063993, z: 1.8809434}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1292,7 +1446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &200614231
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1302,8 +1456,8 @@ Rigidbody:
   m_GameObject: {fileID: 200614229}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1315,8 +1469,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1368,7 +1522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1409,8 +1563,8 @@ Transform:
   m_GameObject: {fileID: 200614229}
   serializedVersion: 2
   m_LocalRotation: {x: -0.14870915, y: 0.03107241, z: -0.15385734, w: 0.9763442}
-  m_LocalPosition: {x: -10.896751, y: 14.11443, z: -48.72}
-  m_LocalScale: {x: 0.52271, y: 1.0532757, z: 0.43123576}
+  m_LocalPosition: {x: -7.631, y: 8.717, z: -49.201}
+  m_LocalScale: {x: 0.34290597, y: 0.69096535, z: 0.2828974}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1448,7 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 2000
+  vida: 100
 --- !u!54 &229945793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1458,8 +1612,8 @@ Rigidbody:
   m_GameObject: {fileID: 229945791}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1471,8 +1625,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1522,7 +1676,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1563,8 +1717,8 @@ Transform:
   m_GameObject: {fileID: 229945791}
   serializedVersion: 2
   m_LocalRotation: {x: -0.004004007, y: -0.0068383105, z: -0.0548904, w: 0.99846095}
-  m_LocalPosition: {x: -3.17, y: 17.28, z: -50.24}
-  m_LocalScale: {x: 2.2880538, y: 3.5102, z: 3.5102}
+  m_LocalPosition: {x: -2.5621, y: 10.793, z: -50.199}
+  m_LocalScale: {x: 1.5009992, y: 2.3027463, z: 2.3027463}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1602,7 +1756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &256170845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1612,8 +1766,8 @@ Rigidbody:
   m_GameObject: {fileID: 256170843}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1625,8 +1779,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1678,7 +1832,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1719,8 +1873,8 @@ Transform:
   m_GameObject: {fileID: 256170843}
   serializedVersion: 2
   m_LocalRotation: {x: -0.07348894, y: -0.022323811, z: 0.15120755, w: 0.98551375}
-  m_LocalPosition: {x: 7.27, y: 17.36, z: -49.77}
-  m_LocalScale: {x: 1.0957061, y: 1.3330446, z: 1.2470232}
+  m_LocalPosition: {x: 4.2867, y: 10.845, z: -49.89}
+  m_LocalScale: {x: 0.71880037, y: 0.8744982, z: 0.8180668}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1755,8 +1909,8 @@ Rigidbody:
   m_GameObject: {fileID: 264490046}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1768,8 +1922,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1785,7 +1939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1500
+  vida: 500
 --- !u!136 &264490049
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1875,8 +2029,8 @@ Transform:
   m_GameObject: {fileID: 264490046}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.88, y: 29.46, z: -50.29}
-  m_LocalScale: {x: 1.5303, y: 1.5303, z: 1.5303}
+  m_LocalPosition: {x: -1.0598, y: 18.782999, z: -50.232}
+  m_LocalScale: {x: 1.0039008, y: 1.0039008, z: 1.0039008}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1993,160 +2147,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290207891}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &290349820
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 290349826}
-  - component: {fileID: 290349825}
-  - component: {fileID: 290349824}
-  - component: {fileID: 290349823}
-  - component: {fileID: 290349822}
-  - component: {fileID: 290349821}
-  m_Layer: 8
-  m_Name: enemigo (10)
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &290349821
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290349820}
-  serializedVersion: 5
-  m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &290349822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290349820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
---- !u!65 &290349823
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290349820}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &290349824
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290349820}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &290349825
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290349820}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &290349826
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 290349820}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.08811541, y: -0.011600635, z: 0.13000986, w: 0.9875214}
-  m_LocalPosition: {x: 7.81, y: 15.56, z: -49.64}
-  m_LocalScale: {x: 0.99629545, y: 1.846884, z: 1.6477003}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -9.847, y: -2.666, z: 15.23}
 --- !u!1 &292594483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,8 +2177,8 @@ Rigidbody:
   m_GameObject: {fileID: 292594483}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2190,8 +2190,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2207,7 +2207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &292594486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2295,8 +2295,8 @@ Transform:
   m_GameObject: {fileID: 292594483}
   serializedVersion: 2
   m_LocalRotation: {x: -0.052419182, y: -0.023340093, z: 0.16815825, w: 0.98408854}
-  m_LocalPosition: {x: 6.4, y: 19.800001, z: -50.05}
-  m_LocalScale: {x: 1.9477345, y: 5.7631903, z: 2.5247884}
+  m_LocalPosition: {x: 3.716, y: 12.447, z: -50.074}
+  m_LocalScale: {x: 1.2777443, y: 3.7807431, z: 1.6563007}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2334,7 +2334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &293972055
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2344,8 +2344,8 @@ Rigidbody:
   m_GameObject: {fileID: 293972053}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2357,8 +2357,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2410,7 +2410,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2451,8 +2451,8 @@ Transform:
   m_GameObject: {fileID: 293972053}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.0831991, w: 0.996533}
-  m_LocalPosition: {x: 8.18, y: 14, z: -49.97}
-  m_LocalScale: {x: 0.45802987, y: 1.1154693, z: 0.45802987}
+  m_LocalPosition: {x: 4.8838, y: 8.641, z: -50.021}
+  m_LocalScale: {x: 0.30047476, y: 0.7317654, z: 0.30047476}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2487,8 +2487,8 @@ Rigidbody:
   m_GameObject: {fileID: 303792270}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2500,8 +2500,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2517,7 +2517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &303792273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2605,8 +2605,8 @@ Transform:
   m_GameObject: {fileID: 303792270}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.88, y: -0.33, z: -50.39}
-  m_LocalScale: {x: 2.444722, y: 2.444722, z: 2.444722}
+  m_LocalPosition: {x: 1.4068, y: -0.75960016, z: -50.297}
+  m_LocalScale: {x: 1.6037759, y: 1.6037759, z: 1.6037759}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &326208761
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2654,8 +2654,8 @@ Rigidbody:
   m_GameObject: {fileID: 326208759}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2667,8 +2667,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2720,7 +2720,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2761,8 +2761,8 @@ Transform:
   m_GameObject: {fileID: 326208759}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.10985588, w: 0.9939475}
-  m_LocalPosition: {x: -10.953655, y: 13.946619, z: -49.97}
-  m_LocalScale: {x: 0.45802987, y: 1.1154693, z: 0.45802987}
+  m_LocalPosition: {x: -7.6683, y: 8.606, z: -50.021}
+  m_LocalScale: {x: 0.30047476, y: 0.7317654, z: 0.30047476}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2918,7 +2918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aafddc47c9d9d048946a0eec6b4d77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camara
-  mouseSenseX: 300
+  mouseSenseX: 800
   mouseSenseY: 300
 --- !u!1 &350770396
 GameObject:
@@ -2950,8 +2950,8 @@ Rigidbody:
   m_GameObject: {fileID: 350770396}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2963,8 +2963,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2980,7 +2980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1500
+  vida: 500
 --- !u!136 &350770399
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3029,7 +3029,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3070,8 +3070,8 @@ Transform:
   m_GameObject: {fileID: 350770396}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: -5.49, y: 26.77, z: -50.34}
-  m_LocalScale: {x: 3.4337888, y: 0.13399096, z: 3.4337888}
+  m_LocalPosition: {x: -4.0841, y: 17.018, z: -50.264}
+  m_LocalScale: {x: 2.2526193, y: 0.08790126, z: 2.2526193}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3188,6 +3188,162 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352431278}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &377296202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377296208}
+  - component: {fileID: 377296207}
+  - component: {fileID: 377296206}
+  - component: {fileID: 377296205}
+  - component: {fileID: 377296204}
+  - component: {fileID: 377296203}
+  m_Layer: 8
+  m_Name: Capsule (20)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &377296203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377296202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 300
+--- !u!54 &377296204
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377296202}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &377296205
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377296202}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &377296206
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377296202}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &377296207
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377296202}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &377296208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377296202}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.066800825, y: 0.029041452, z: -0.19796756, w: 0.97749835}
+  m_LocalPosition: {x: -7.28, y: 9.58, z: -49.728}
+  m_LocalScale: {x: 0.7585292, y: 0.73080665, z: 1.1931603}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -6.84, y: 4.808, z: -23.185}
 --- !u!1 &379024137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,8 +3374,8 @@ Rigidbody:
   m_GameObject: {fileID: 379024137}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3231,8 +3387,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3248,7 +3404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &379024140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3336,8 +3492,8 @@ Transform:
   m_GameObject: {fileID: 379024137}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.075181454, w: 0.9971699}
-  m_LocalPosition: {x: 2.5, y: 5.68, z: -50.39}
-  m_LocalScale: {x: 2.444722, y: 8.768484, z: 3.1712933}
+  m_LocalPosition: {x: 1.1576, y: 3.1830997, z: -50.297}
+  m_LocalScale: {x: 1.6037759, y: 5.752263, z: 2.080418}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3502,7 +3658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &417070708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3512,8 +3668,8 @@ Rigidbody:
   m_GameObject: {fileID: 417070706}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3525,8 +3681,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3578,7 +3734,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3619,8 +3775,8 @@ Transform:
   m_GameObject: {fileID: 417070706}
   serializedVersion: 2
   m_LocalRotation: {x: -0.04744634, y: 0.0077266768, z: -0.19280972, w: 0.98005795}
-  m_LocalPosition: {x: -8.59, y: 19.860962, z: -50.06}
-  m_LocalScale: {x: 2.3791652, y: 3.1451786, z: 2.4372435}
+  m_LocalPosition: {x: -6.1178, y: 12.486, z: -50.081}
+  m_LocalScale: {x: 1.5607696, y: 2.0632863, z: 1.5988699}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3655,8 +3811,8 @@ Rigidbody:
   m_GameObject: {fileID: 478178126}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3668,8 +3824,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3685,7 +3841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &478178129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3773,12 +3929,322 @@ Transform:
   m_GameObject: {fileID: 478178126}
   serializedVersion: 2
   m_LocalRotation: {x: 0.24576864, y: -0, z: -0, w: 0.9693285}
-  m_LocalPosition: {x: -4.54, y: -1.66, z: -48.69}
-  m_LocalScale: {x: 2.444722, y: 2.444722, z: 2.444722}
+  m_LocalPosition: {x: -3.4608, y: -1.6321301, z: -49.182}
+  m_LocalScale: {x: 1.6037759, y: 1.6037759, z: 1.6037759}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 28.455, y: 0, z: 0}
+--- !u!1 &486512608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486512614}
+  - component: {fileID: 486512613}
+  - component: {fileID: 486512612}
+  - component: {fileID: 486512611}
+  - component: {fileID: 486512610}
+  - component: {fileID: 486512609}
+  m_Layer: 8
+  m_Name: enemigo (27)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &486512609
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486512608}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &486512610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486512608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &486512611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486512608}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &486512612
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486512608}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &486512613
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486512608}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &486512614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486512608}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.37360683, w: 0.92758715}
+  m_LocalPosition: {x: -0.604, y: 16.258, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.31743884, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -43.876}
+--- !u!1 &505528537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 505528543}
+  - component: {fileID: 505528542}
+  - component: {fileID: 505528541}
+  - component: {fileID: 505528540}
+  - component: {fileID: 505528539}
+  - component: {fileID: 505528538}
+  m_Layer: 8
+  m_Name: Cylinder (6)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &505528538
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505528537}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &505528539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505528537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 500
+--- !u!136 &505528540
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505528537}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &505528541
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505528537}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &505528542
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505528537}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &505528543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505528537}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
+  m_LocalPosition: {x: 2.04, y: 17.018, z: -50.264}
+  m_LocalScale: {x: 2.2526193, y: 0.08790126, z: 2.2526193}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &525395183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,8 +4275,8 @@ Rigidbody:
   m_GameObject: {fileID: 525395183}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3822,8 +4288,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3839,7 +4305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &525395186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3927,8 +4393,8 @@ Transform:
   m_GameObject: {fileID: 525395183}
   serializedVersion: 2
   m_LocalRotation: {x: -0.23135266, y: -0.44092417, z: -0.7464631, w: 0.44142345}
-  m_LocalPosition: {x: -1.62, y: 29.8, z: -48.55}
-  m_LocalScale: {x: 0.14442886, y: 1.0194124, z: 0.6752252}
+  m_LocalPosition: {x: -1.5453, y: 19.006, z: -49.09}
+  m_LocalScale: {x: 0.094747595, y: 0.6687505, z: 0.44295833}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3963,8 +4429,8 @@ Rigidbody:
   m_GameObject: {fileID: 566009071}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3976,8 +4442,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3993,7 +4459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &566009074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4081,8 +4547,8 @@ Transform:
   m_GameObject: {fileID: 566009071}
   serializedVersion: 2
   m_LocalRotation: {x: -0.082858674, y: -0, z: -0, w: 0.9965614}
-  m_LocalPosition: {x: -0.7, y: 31.35, z: -49.2}
-  m_LocalScale: {x: 0.10854416, y: 2.20561, z: 1.9342396}
+  m_LocalPosition: {x: -0.94174, y: 20.024, z: -49.517}
+  m_LocalScale: {x: 0.071206674, y: 1.4469148, z: 1.2688916}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4386,8 +4852,8 @@ Rigidbody:
   m_GameObject: {fileID: 618622544}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4399,8 +4865,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -4416,7 +4882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &618622547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4503,13 +4969,167 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618622544}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24576864, y: -0, z: -0, w: 0.9693285}
-  m_LocalPosition: {x: 2.88, y: -1.66, z: -48.69}
-  m_LocalScale: {x: 2.444722, y: 2.444722, z: 2.444722}
+  m_LocalRotation: {x: 0.20511669, y: -0, z: -0, w: 0.97873753}
+  m_LocalPosition: {x: 1.4068, y: -1.6321301, z: -49.182}
+  m_LocalScale: {x: 1.6037759, y: 1.6037759, z: 2.5390978}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 28.455, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 23.673, y: 0, z: 0}
+--- !u!1 &631076815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 631076821}
+  - component: {fileID: 631076820}
+  - component: {fileID: 631076819}
+  - component: {fileID: 631076818}
+  - component: {fileID: 631076817}
+  - component: {fileID: 631076816}
+  m_Layer: 8
+  m_Name: enemigo (24)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &631076816
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631076815}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &631076817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631076815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &631076818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631076815}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &631076819
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631076815}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &631076820
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631076815}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &631076821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631076815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.51000005, y: 16.534, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.47703272, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &636767264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4543,7 +5163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &636767266
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4553,8 +5173,8 @@ Rigidbody:
   m_GameObject: {fileID: 636767264}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4566,8 +5186,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -4619,7 +5239,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4660,8 +5280,8 @@ Transform:
   m_GameObject: {fileID: 636767264}
   serializedVersion: 2
   m_LocalRotation: {x: -0.043788593, y: 0.014280945, z: -0.14964111, w: 0.9876671}
-  m_LocalPosition: {x: -10.94943, y: 14.004777, z: -49.34}
-  m_LocalScale: {x: 0.52271, y: 1.0532757, z: 0.43123576}
+  m_LocalPosition: {x: -7.6656, y: 8.644, z: -49.609}
+  m_LocalScale: {x: 0.34290597, y: 0.69096535, z: 0.2828974}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4828,7 +5448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &653243193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4838,8 +5458,8 @@ Rigidbody:
   m_GameObject: {fileID: 653243191}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -4851,8 +5471,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -4904,7 +5524,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4945,8 +5565,8 @@ Transform:
   m_GameObject: {fileID: 653243191}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.13052596, w: 0.99144495}
-  m_LocalPosition: {x: 4.45, y: 25.73, z: -50.32}
-  m_LocalScale: {x: 1.4280732, y: 1.8704903, z: 1.6252902}
+  m_LocalPosition: {x: 2.4368, y: 16.336, z: -50.251}
+  m_LocalScale: {x: 0.9368384, y: 1.2270709, z: 1.0662159}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5079,7 +5699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Raycast
   danio: 50
   fuerza: 250
-  fuerzaBala: 1500
+  fuerzaBala: 2000
   enemyMask:
     serializedVersion: 2
     m_Bits: 256
@@ -5114,8 +5734,8 @@ Rigidbody:
   m_GameObject: {fileID: 798399300}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -5127,8 +5747,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5144,7 +5764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &798399303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5232,8 +5852,8 @@ Transform:
   m_GameObject: {fileID: 798399300}
   serializedVersion: 2
   m_LocalRotation: {x: -0.11949423, y: -0.992835, z: 0.00000034738332, w: 0.0000029057264}
-  m_LocalPosition: {x: 1.2, y: 23.67, z: -50.39}
-  m_LocalScale: {x: 3.5110674, y: 9.692496, z: 2.4754763}
+  m_LocalPosition: {x: 0.30471, y: 14.985001, z: -50.297}
+  m_LocalScale: {x: 2.3033152, y: 6.3584294, z: 1.6239512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5320,7 +5940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &833420320
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5330,8 +5950,8 @@ Rigidbody:
   m_GameObject: {fileID: 833420318}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -5343,8 +5963,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5396,7 +6016,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5437,8 +6057,8 @@ Transform:
   m_GameObject: {fileID: 833420318}
   serializedVersion: 2
   m_LocalRotation: {x: -0.04597014, y: 0.0028508955, z: 0.102663524, w: 0.99364924}
-  m_LocalPosition: {x: 8.15, y: 14.05, z: -49.34}
-  m_LocalScale: {x: 0.52271, y: 1.0532757, z: 0.43123576}
+  m_LocalPosition: {x: 4.931, y: 8.674, z: -49.609}
+  m_LocalScale: {x: 0.34290597, y: 0.69096535, z: 0.2828974}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5476,7 +6096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &863383582
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5486,8 +6106,8 @@ Rigidbody:
   m_GameObject: {fileID: 863383580}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -5499,8 +6119,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5552,7 +6172,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5593,12 +6213,166 @@ Transform:
   m_GameObject: {fileID: 863383580}
   serializedVersion: 2
   m_LocalRotation: {x: -0.15180928, y: -0.005813423, z: 0.08682693, w: 0.98457164}
-  m_LocalPosition: {x: 8.13, y: 14.17, z: -48.72}
-  m_LocalScale: {x: 0.52271, y: 1.0532757, z: 0.43123576}
+  m_LocalPosition: {x: 4.8509, y: 8.752, z: -49.201}
+  m_LocalScale: {x: 0.34290597, y: 0.69096535, z: 0.2828974}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -17.333, y: -2.27, z: 10.426}
+--- !u!1 &896684344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 896684350}
+  - component: {fileID: 896684349}
+  - component: {fileID: 896684348}
+  - component: {fileID: 896684347}
+  - component: {fileID: 896684346}
+  - component: {fileID: 896684345}
+  m_Layer: 8
+  m_Name: enemigo (29)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &896684345
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896684344}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &896684346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896684344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &896684347
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896684344}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &896684348
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896684344}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &896684349
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896684344}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &896684350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896684344}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.36419028, w: 0.9313246}
+  m_LocalPosition: {x: -1.319, y: 15.518, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.31743884, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.716}
 --- !u!1 &926831237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,6 +6453,314 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
+--- !u!1 &929372617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929372623}
+  - component: {fileID: 929372622}
+  - component: {fileID: 929372621}
+  - component: {fileID: 929372620}
+  - component: {fileID: 929372619}
+  - component: {fileID: 929372618}
+  m_Layer: 8
+  m_Name: enemigo (28)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &929372618
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929372617}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &929372619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929372617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &929372620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929372617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &929372621
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929372617}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &929372622
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929372617}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &929372623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929372617}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.4061441, w: 0.91380906}
+  m_LocalPosition: {x: -1.301, y: 16.115, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.3522936, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -47.926}
+--- !u!1 &984193508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 984193514}
+  - component: {fileID: 984193513}
+  - component: {fileID: 984193512}
+  - component: {fileID: 984193511}
+  - component: {fileID: 984193510}
+  - component: {fileID: 984193509}
+  m_Layer: 8
+  m_Name: enemigo (22)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &984193509
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193508}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &984193510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &984193511
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &984193512
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193508}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &984193513
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193508}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &984193514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984193508}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.96, y: 16.187, z: -48.12}
+  m_LocalScale: {x: 0.58261883, y: 0.2527903, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988511309
 GameObject:
   m_ObjectHideFlags: 0
@@ -5709,8 +6791,8 @@ Rigidbody:
   m_GameObject: {fileID: 988511309}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -5722,8 +6804,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5739,7 +6821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &988511312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5827,8 +6909,8 @@ Transform:
   m_GameObject: {fileID: 988511309}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 17.63, z: -50.39}
-  m_LocalScale: {x: 2.7204866, y: 2.292489, z: 2.444722}
+  m_LocalPosition: {x: -1.0073, y: 11.022, z: -50.297}
+  m_LocalScale: {x: 1.7846819, y: 1.5039088, z: 1.6037759}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5866,7 +6948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &998998373
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5876,8 +6958,8 @@ Rigidbody:
   m_GameObject: {fileID: 998998371}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -5889,8 +6971,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -5942,7 +7024,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5983,8 +7065,8 @@ Transform:
   m_GameObject: {fileID: 998998371}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.87, y: 23.8, z: -50.12}
-  m_LocalScale: {x: 8.420854, y: 5.252304, z: 5.943021}
+  m_LocalPosition: {x: -1.0533, y: 15.07, z: -50.12}
+  m_LocalScale: {x: 5.524212, y: 3.4455938, z: 3.8987148}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6022,7 +7104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &1014576825
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6032,8 +7114,8 @@ Rigidbody:
   m_GameObject: {fileID: 1014576823}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -6045,8 +7127,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -6098,7 +7180,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6139,8 +7221,8 @@ Transform:
   m_GameObject: {fileID: 1014576823}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.04456788, w: 0.9990064}
-  m_LocalPosition: {x: -4.09, y: 5.71, z: -50.299}
-  m_LocalScale: {x: 3.2183557, y: 5.1321387, z: 2.9915931}
+  m_LocalPosition: {x: -3.1657, y: 3.2027998, z: -50.237}
+  m_LocalScale: {x: 2.1112916, y: 3.3667636, z: 1.9625319}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6269,7 +7351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &1055202862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6279,8 +7361,8 @@ Rigidbody:
   m_GameObject: {fileID: 1055202860}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -6292,8 +7374,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -6345,7 +7427,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6386,168 +7468,12 @@ Transform:
   m_GameObject: {fileID: 1055202860}
   serializedVersion: 2
   m_LocalRotation: {x: -0.29225913, y: 0.1211204, z: -0.20580716, w: 0.9260443}
-  m_LocalPosition: {x: -10.179543, y: 15.725061, z: -48.66}
-  m_LocalScale: {x: 0.4439543, y: 0.7951064, z: 0.4594183}
+  m_LocalPosition: {x: -7.1606, y: 9.773, z: -49.162}
+  m_LocalScale: {x: 0.291241, y: 0.5216023, z: 0.30138558}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -29.435, y: 23.31, z: -31.263}
---- !u!1 &1059178956
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1059178962}
-  - component: {fileID: 1059178961}
-  - component: {fileID: 1059178960}
-  - component: {fileID: 1059178959}
-  - component: {fileID: 1059178958}
-  - component: {fileID: 1059178957}
-  m_Layer: 8
-  m_Name: Capsule
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1059178957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059178956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
---- !u!54 &1059178958
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059178956}
-  serializedVersion: 5
-  m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!136 &1059178959
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059178956}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1059178960
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059178956}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1059178961
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059178956}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1059178962
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059178956}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.59373, y: 7.32, z: -54.32}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1073445198
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,8 +7504,8 @@ Rigidbody:
   m_GameObject: {fileID: 1073445198}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -6591,8 +7517,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -6608,7 +7534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1500
+  vida: 500
 --- !u!136 &1073445201
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6657,7 +7583,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6698,8 +7624,8 @@ Transform:
   m_GameObject: {fileID: 1073445198}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.036997255, w: 0.9993154}
-  m_LocalPosition: {x: 1.79, y: 11.89, z: -50.19}
-  m_LocalScale: {x: 1.1414, y: 5.948634, z: 1.1414}
+  m_LocalPosition: {x: 0.69181, y: 7.2572994, z: -50.166}
+  m_LocalScale: {x: 0.74877626, y: 3.9023974, z: 0.74877626}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6734,8 +7660,8 @@ Rigidbody:
   m_GameObject: {fileID: 1082991049}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -6747,8 +7673,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -6764,7 +7690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &1082991052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6852,8 +7778,8 @@ Transform:
   m_GameObject: {fileID: 1082991049}
   serializedVersion: 2
   m_LocalRotation: {x: -0.057311725, y: -0.0028101376, z: -0.19899574, w: 0.97831905}
-  m_LocalPosition: {x: -8.48, y: 20, z: -50.05}
-  m_LocalScale: {x: 1.9477345, y: 5.7631903, z: 2.5247884}
+  m_LocalPosition: {x: -6.0456, y: 12.578, z: -50.074}
+  m_LocalScale: {x: 1.2777443, y: 3.7807431, z: 1.6563007}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7003,7 +7929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &1159562241
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7013,8 +7939,8 @@ Rigidbody:
   m_GameObject: {fileID: 1159562239}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -7026,8 +7952,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -7079,7 +8005,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7120,8 +8046,8 @@ Transform:
   m_GameObject: {fileID: 1159562239}
   serializedVersion: 2
   m_LocalRotation: {x: -0.047093686, y: -0.009645458, z: 0.1682009, w: 0.98458}
-  m_LocalPosition: {x: 6.47, y: 19.64, z: -50.06}
-  m_LocalScale: {x: 2.461871, y: 3.1451786, z: 2.4372435}
+  m_LocalPosition: {x: 3.762, y: 12.341, z: -50.081}
+  m_LocalScale: {x: 1.6150259, y: 2.0632863, z: 1.5988699}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7262,7 +8188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &1219204180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7272,8 +8198,8 @@ Rigidbody:
   m_GameObject: {fileID: 1219204178}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -7285,8 +8211,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -7338,7 +8264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7379,8 +8305,8 @@ Transform:
   m_GameObject: {fileID: 1219204178}
   serializedVersion: 2
   m_LocalRotation: {x: -0.07674515, y: 0.0030283867, z: -0.18056987, w: 0.9805588}
-  m_LocalPosition: {x: -9.58, y: 17.49, z: -49.77}
-  m_LocalScale: {x: 1.0957061, y: 1.3330446, z: 1.2470232}
+  m_LocalPosition: {x: -6.7672, y: 10.931, z: -49.89}
+  m_LocalScale: {x: 0.71880037, y: 0.8744982, z: 0.8180668}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7475,6 +8401,162 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298246944}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1392107037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1392107043}
+  - component: {fileID: 1392107042}
+  - component: {fileID: 1392107041}
+  - component: {fileID: 1392107040}
+  - component: {fileID: 1392107039}
+  - component: {fileID: 1392107038}
+  m_Layer: 8
+  m_Name: Cylinder (7)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1392107038
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392107037}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1392107039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392107037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 500
+--- !u!136 &1392107040
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392107037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &1392107041
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392107037}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1392107042
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392107037}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1392107043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392107037}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5000002, y: 0.5000002, z: -0.4999998, w: 0.4999999}
+  m_LocalPosition: {x: -1.0140984, y: 16.218, z: -48.264004}
+  m_LocalScale: {x: 2.2526193, y: 0.08790126, z: 2.2526193}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
 --- !u!1 &1403423127
 GameObject:
   m_ObjectHideFlags: 0
@@ -7505,8 +8587,8 @@ Rigidbody:
   m_GameObject: {fileID: 1403423127}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -7518,8 +8600,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -7535,7 +8617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1500
+  vida: 500
 --- !u!136 &1403423130
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7584,7 +8666,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7625,8 +8707,8 @@ Transform:
   m_GameObject: {fileID: 1403423127}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.03469677, w: 0.9993979}
-  m_LocalPosition: {x: -3.6, y: 11.89, z: -50.19}
-  m_LocalScale: {x: 1.1414, y: 5.948634, z: 1.1414}
+  m_LocalPosition: {x: -2.8442, y: 7.2572994, z: -50.166}
+  m_LocalScale: {x: 0.74877626, y: 3.9023974, z: 0.74877626}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7661,8 +8743,8 @@ Rigidbody:
   m_GameObject: {fileID: 1462229896}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -7674,8 +8756,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -7691,7 +8773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &1462229899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7779,8 +8861,8 @@ Transform:
   m_GameObject: {fileID: 1462229896}
   serializedVersion: 2
   m_LocalRotation: {x: -0.3721012, y: -0.34556454, z: -0.5990567, w: 0.6190775}
-  m_LocalPosition: {x: -0.81, y: 29.71, z: -48.28}
-  m_LocalScale: {x: 0.14442886, y: 0.91846466, z: 0.6752252}
+  m_LocalPosition: {x: -1.0139, y: 18.947, z: -48.913}
+  m_LocalScale: {x: 0.094747595, y: 0.6025272, z: 0.44295833}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7818,7 +8900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &1487669633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7828,8 +8910,8 @@ Rigidbody:
   m_GameObject: {fileID: 1487669631}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -7841,8 +8923,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -7894,7 +8976,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7935,12 +9017,166 @@ Transform:
   m_GameObject: {fileID: 1487669631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.0643542, w: 0.9979272}
-  m_LocalPosition: {x: 2.43, y: 5.71, z: -50.299}
-  m_LocalScale: {x: 3.2183557, y: 5.1321387, z: 2.9915931}
+  m_LocalPosition: {x: 1.1116, y: 3.2027998, z: -50.237}
+  m_LocalScale: {x: 2.1112916, y: 3.3667636, z: 1.9625319}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.38}
+--- !u!1 &1510558150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1510558156}
+  - component: {fileID: 1510558155}
+  - component: {fileID: 1510558154}
+  - component: {fileID: 1510558153}
+  - component: {fileID: 1510558152}
+  - component: {fileID: 1510558151}
+  m_Layer: 8
+  m_Name: enemigo (21)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1510558151
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510558150}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1510558152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510558150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &1510558153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510558150}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1510558154
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510558150}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1510558155
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510558150}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1510558156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510558150}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.969, y: 16.92, z: -48.12}
+  m_LocalScale: {x: 0.64392394, y: 0.2527903, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1569484294
 GameObject:
   m_ObjectHideFlags: 0
@@ -7971,8 +9207,8 @@ Rigidbody:
   m_GameObject: {fileID: 1569484294}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -7984,8 +9220,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -8001,7 +9237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &1569484297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8089,8 +9325,8 @@ Transform:
   m_GameObject: {fileID: 1569484294}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 23.79, z: -50.39}
-  m_LocalScale: {x: 3.5110674, y: 9.989448, z: 2.444722}
+  m_LocalPosition: {x: -1.0073, y: 15.063999, z: -50.297}
+  m_LocalScale: {x: 2.3033152, y: 6.553234, z: 1.6037759}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8125,8 +9361,8 @@ Rigidbody:
   m_GameObject: {fileID: 1584430451}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8138,8 +9374,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -8155,7 +9391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1500
+  vida: 500
 --- !u!136 &1584430454
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8204,7 +9440,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8245,8 +9481,8 @@ Transform:
   m_GameObject: {fileID: 1584430451}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.19674167, w: 0.98045534}
-  m_LocalPosition: {x: -7.4988775, y: 22.517286, z: -50.31}
-  m_LocalScale: {x: 0.74610716, y: 2.8903856, z: 0.74610716}
+  m_LocalPosition: {x: -5.402, y: 14.228001, z: -50.245}
+  m_LocalScale: {x: 0.48945802, y: 1.8961382, z: 0.48945802}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8281,8 +9517,8 @@ Rigidbody:
   m_GameObject: {fileID: 1594104603}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8294,8 +9530,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -8311,7 +9547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &1594104606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8399,13 +9635,13 @@ Transform:
   m_GameObject: {fileID: 1594104603}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.05561828, w: 0.9984521}
-  m_LocalPosition: {x: -4.16, y: 5.68, z: -50.39}
-  m_LocalScale: {x: 2.444722, y: 8.768484, z: 3.1712933}
+  m_LocalPosition: {x: -3.2115, y: 3.1830997, z: -50.297}
+  m_LocalScale: {x: 1.6037759, y: 5.752263, z: 2.080418}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.377}
---- !u!1 &1677711278
+--- !u!1 &1643117032
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8413,30 +9649,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1677711284}
-  - component: {fileID: 1677711283}
-  - component: {fileID: 1677711282}
-  - component: {fileID: 1677711281}
-  - component: {fileID: 1677711280}
-  - component: {fileID: 1677711279}
+  - component: {fileID: 1643117038}
+  - component: {fileID: 1643117037}
+  - component: {fileID: 1643117036}
+  - component: {fileID: 1643117035}
+  - component: {fileID: 1643117034}
+  - component: {fileID: 1643117033}
   m_Layer: 8
-  m_Name: enemigo (11)
+  m_Name: enemigo (31)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &1677711279
+--- !u!54 &1643117033
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677711278}
+  m_GameObject: {fileID: 1643117032}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8448,31 +9684,31 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1677711280
+--- !u!114 &1643117034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677711278}
+  m_GameObject: {fileID: 1643117032}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
---- !u!65 &1677711281
+  vida: 700
+--- !u!65 &1643117035
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677711278}
+  m_GameObject: {fileID: 1643117032}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -8487,13 +9723,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1677711282
+--- !u!23 &1643117036
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677711278}
+  m_GameObject: {fileID: 1643117032}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -8512,7 +9748,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8536,29 +9772,29 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1677711283
+--- !u!33 &1643117037
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677711278}
+  m_GameObject: {fileID: 1643117032}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1677711284
+--- !u!4 &1643117038
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677711278}
+  m_GameObject: {fileID: 1643117032}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.08750914, y: 0.015526104, z: -0.17400314, w: 0.9807263}
-  m_LocalPosition: {x: -10.358797, y: 15.435458, z: -49.64}
-  m_LocalScale: {x: 0.99629545, y: 1.846884, z: 1.6477003}
+  m_LocalRotation: {x: -0, y: -0, z: -0.28239304, w: 0.95929885}
+  m_LocalPosition: {x: -0.59699994, y: 15.512, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.31743884, z: 0.2527903}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -9.569, y: 3.541, z: -20.418}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -32.806}
 --- !u!1 &1724640964
 GameObject:
   m_ObjectHideFlags: 0
@@ -8592,7 +9828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 2000
+  vida: 100
 --- !u!54 &1724640966
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8602,8 +9838,8 @@ Rigidbody:
   m_GameObject: {fileID: 1724640964}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8615,8 +9851,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -8666,7 +9902,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8707,8 +9943,8 @@ Transform:
   m_GameObject: {fileID: 1724640964}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.69, y: 31.77, z: -49.83}
-  m_LocalScale: {x: 0.38235134, y: 2.7015564, z: 2.7015564}
+  m_LocalPosition: {x: -0.93517, y: 20.299, z: -49.929}
+  m_LocalScale: {x: 0.25082847, y: 1.7722634, z: 1.7722634}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8743,8 +9979,8 @@ Rigidbody:
   m_GameObject: {fileID: 1726135709}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8756,8 +9992,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -8773,7 +10009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &1726135712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8861,12 +10097,168 @@ Transform:
   m_GameObject: {fileID: 1726135709}
   serializedVersion: 2
   m_LocalRotation: {x: -0.4052416, y: 0.020669147, z: 0.046556327, w: 0.9127895}
-  m_LocalPosition: {x: -2.149, y: 30.549, z: -49.385}
-  m_LocalScale: {x: 0.14442886, y: 1.7138913, z: 0.6752252}
+  m_LocalPosition: {x: -1.8923, y: 19.497, z: -49.638}
+  m_LocalScale: {x: 0.09474877, y: 1.1243395, z: 0.44295833}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -47.879, y: 0, z: 5.84}
+--- !u!1 &1734765462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734765468}
+  - component: {fileID: 1734765467}
+  - component: {fileID: 1734765466}
+  - component: {fileID: 1734765465}
+  - component: {fileID: 1734765464}
+  - component: {fileID: 1734765463}
+  m_Layer: 8
+  m_Name: Capsule (19)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1734765463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734765462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 300
+--- !u!54 &1734765464
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734765462}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!136 &1734765465
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734765462}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1734765466
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734765462}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1734765467
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734765462}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1734765468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734765462}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.07268005, y: 0.0048337365, z: 0.14298941, w: 0.98704016}
+  m_LocalPosition: {x: 4.63, y: 9.776, z: -49.728}
+  m_LocalScale: {x: 0.7585292, y: 0.73080665, z: 1.1931603}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -8.329, y: -0.651, z: 16.533}
 --- !u!1 &1735660983
 GameObject:
   m_ObjectHideFlags: 0
@@ -8897,8 +10289,8 @@ Rigidbody:
   m_GameObject: {fileID: 1735660983}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -8910,8 +10302,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -8927,7 +10319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1500
+  vida: 500
 --- !u!136 &1735660986
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8976,7 +10368,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9017,8 +10409,8 @@ Transform:
   m_GameObject: {fileID: 1735660983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.16466737, w: 0.98634917}
-  m_LocalPosition: {x: 5.52, y: 22.35, z: -50.31}
-  m_LocalScale: {x: 0.7579522, y: 2.9362729, z: 0.7579522}
+  m_LocalPosition: {x: 3.1387, y: 14.1189995, z: -50.245}
+  m_LocalScale: {x: 0.49722853, y: 1.926241, z: 0.49722853}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9102,8 +10494,8 @@ Rigidbody:
   m_GameObject: {fileID: 1773741120}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -9115,8 +10507,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -9132,7 +10524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &1773741123
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9220,8 +10612,8 @@ Transform:
   m_GameObject: {fileID: 1773741120}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.54, y: -0.33, z: -50.39}
-  m_LocalScale: {x: 2.444722, y: 2.444722, z: 2.444722}
+  m_LocalPosition: {x: -3.4608, y: -0.75960016, z: -50.297}
+  m_LocalScale: {x: 1.6037759, y: 1.6037759, z: 1.6037759}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9257,6 +10649,160 @@ Transform:
   m_Children: []
   m_Father: {fileID: 926831240}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1833822996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1833823002}
+  - component: {fileID: 1833823001}
+  - component: {fileID: 1833823000}
+  - component: {fileID: 1833822999}
+  - component: {fileID: 1833822998}
+  - component: {fileID: 1833822997}
+  m_Layer: 8
+  m_Name: enemigo (30)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1833822997
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833822996}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1833822998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833822996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &1833822999
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833822996}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1833823000
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833822996}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1833823001
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833822996}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1833823002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833822996}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.31758985, w: 0.9482282}
+  m_LocalPosition: {x: -1.298, y: 16.831, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.36075667, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -37.034}
 --- !u!1 &1838102648
 GameObject:
   m_ObjectHideFlags: 0
@@ -9290,7 +10836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 500
+  vida: 300
 --- !u!54 &1838102650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9300,8 +10846,8 @@ Rigidbody:
   m_GameObject: {fileID: 1838102648}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -9313,8 +10859,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -9366,7 +10912,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9407,8 +10953,8 @@ Transform:
   m_GameObject: {fileID: 1838102648}
   serializedVersion: 2
   m_LocalRotation: {x: -0.31518304, y: 0.027295643, z: 0.08318939, w: 0.94498366}
-  m_LocalPosition: {x: 7.79, y: 15.9, z: -48.66}
-  m_LocalScale: {x: 0.4439543, y: 0.7951064, z: 0.4594183}
+  m_LocalPosition: {x: 4.6279, y: 9.888, z: -49.162}
+  m_LocalScale: {x: 0.291241, y: 0.5216023, z: 0.30138558}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9474,8 +11020,8 @@ Rigidbody:
   m_GameObject: {fileID: 1923080646}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -9487,8 +11033,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -9504,7 +11050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &1923080649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9592,8 +11138,8 @@ Transform:
   m_GameObject: {fileID: 1923080646}
   serializedVersion: 2
   m_LocalRotation: {x: -0.44418326, y: -0.24980475, z: -0.49166146, w: 0.70609343}
-  m_LocalPosition: {x: 0.06, y: 29.76, z: -48.52}
-  m_LocalScale: {x: 0.14442886, y: 1.0347382, z: 0.6752252}
+  m_LocalPosition: {x: -0.44315, y: 18.98, z: -49.07}
+  m_LocalScale: {x: 0.094747595, y: 0.67880446, z: 0.44295833}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9696,6 +11242,160 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2066087312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2066087318}
+  - component: {fileID: 2066087317}
+  - component: {fileID: 2066087316}
+  - component: {fileID: 2066087315}
+  - component: {fileID: 2066087314}
+  - component: {fileID: 2066087313}
+  m_Layer: 8
+  m_Name: enemigo (23)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &2066087313
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066087312}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2066087314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066087312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &2066087315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066087312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2066087316
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066087312}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2066087317
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066087312}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2066087318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066087312}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.941, y: 15.445, z: -48.12}
+  m_LocalScale: {x: 0.6688521, y: 0.2527903, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2099407374
 GameObject:
   m_ObjectHideFlags: 0
@@ -9729,7 +11429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 2000
+  vida: 100
 --- !u!54 &2099407376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9739,8 +11439,8 @@ Rigidbody:
   m_GameObject: {fileID: 2099407374}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -9752,8 +11452,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -9803,7 +11503,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e4bafec383d3c0a4c834b46a2d4ddb8b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9844,12 +11544,166 @@ Transform:
   m_GameObject: {fileID: 2099407374}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0035236243, y: -0.0070977956, z: 0.013992995, w: 0.9998707}
-  m_LocalPosition: {x: 1.43, y: 17.28, z: -50.24}
-  m_LocalScale: {x: 2.2880538, y: 3.5102, z: 3.5102}
+  m_LocalPosition: {x: 0.45559, y: 10.793, z: -50.199}
+  m_LocalScale: {x: 1.5009992, y: 2.3027463, z: 2.3027463}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -0.392, y: -0.819, z: 1.606}
+--- !u!1 &2105198956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105198962}
+  - component: {fileID: 2105198961}
+  - component: {fileID: 2105198960}
+  - component: {fileID: 2105198959}
+  - component: {fileID: 2105198958}
+  - component: {fileID: 2105198957}
+  m_Layer: 8
+  m_Name: enemigo (26)
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &2105198957
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105198956}
+  serializedVersion: 5
+  m_Mass: 0.0000001
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2105198958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105198956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
+  vida: 700
+--- !u!65 &2105198959
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105198956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2105198960
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105198956}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 03108a3d4a109464395b63b0dec9763c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2105198961
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105198956}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2105198962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105198956}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.35899925, w: 0.93333787}
+  m_LocalPosition: {x: -0.611, y: 16.827, z: -48.12}
+  m_LocalScale: {x: 0.23426649, y: 0.36075667, z: 0.2527903}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.078}
 --- !u!1 &2110121579
 GameObject:
   m_ObjectHideFlags: 0
@@ -10067,8 +11921,8 @@ Rigidbody:
   m_GameObject: {fileID: 2114804274}
   serializedVersion: 5
   m_Mass: 0.0000001
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 7000
+  m_AngularDamping: 7000
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -10080,8 +11934,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -10097,7 +11951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78f3f42f78a1b04fa186eef92e5263c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaEnemigo
-  vida: 1000
+  vida: 700
 --- !u!65 &2114804277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10185,8 +12039,8 @@ Transform:
   m_GameObject: {fileID: 2114804274}
   serializedVersion: 2
   m_LocalRotation: {x: -0.40533704, y: -0.018704338, z: -0.042130772, w: 0.91300446}
-  m_LocalPosition: {x: 0.524, y: 30.4, z: -49.22}
-  m_LocalScale: {x: 0.14442886, y: 1.7138913, z: 0.6752252}
+  m_LocalPosition: {x: -0.13876, y: 19.4, z: -49.53}
+  m_LocalScale: {x: 0.09474877, y: 1.1243395, z: 0.44295833}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -10202,8 +12056,17 @@ SceneRoots:
   - {fileID: 1935652784}
   - {fileID: 108040302}
   - {fileID: 303792276}
-  - {fileID: 290349826}
-  - {fileID: 1677711284}
+  - {fileID: 1510558156}
+  - {fileID: 984193514}
+  - {fileID: 631076821}
+  - {fileID: 37817652}
+  - {fileID: 486512614}
+  - {fileID: 929372623}
+  - {fileID: 896684350}
+  - {fileID: 1643117038}
+  - {fileID: 2105198962}
+  - {fileID: 1833823002}
+  - {fileID: 2066087318}
   - {fileID: 566009077}
   - {fileID: 2114804280}
   - {fileID: 1726135715}
@@ -10229,7 +12092,6 @@ SceneRoots:
   - {fileID: 642343012}
   - {fileID: 589915209}
   - {fileID: 104546313}
-  - {fileID: 1059178962}
   - {fileID: 293972059}
   - {fileID: 326208765}
   - {fileID: 833420324}
@@ -10244,11 +12106,15 @@ SceneRoots:
   - {fileID: 1219204184}
   - {fileID: 33816396}
   - {fileID: 1159562245}
+  - {fileID: 1734765468}
+  - {fileID: 377296208}
   - {fileID: 417070712}
   - {fileID: 166228307}
   - {fileID: 1487669637}
   - {fileID: 1014576829}
   - {fileID: 350770402}
+  - {fileID: 1392107043}
+  - {fileID: 505528543}
   - {fileID: 1735660989}
   - {fileID: 1584430457}
   - {fileID: 264490052}
