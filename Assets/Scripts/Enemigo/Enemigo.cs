@@ -7,7 +7,7 @@ public class Enemigo : MonoBehaviour
     private NavMeshAgent agent;
     private Transform player;
 
-    [SerializeField] private string escena;
+    //[SerializeField] private string escena;
 
     //Detrect
     private bool detected;
@@ -33,7 +33,7 @@ public class Enemigo : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            SceneManager.LoadScene(escena);
+            //SceneManager.LoadScene(escena);
         }
     }
     private void OnDrawGizmosSelected()

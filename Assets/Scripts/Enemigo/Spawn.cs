@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Spawn : MonoBehaviour
@@ -6,16 +7,18 @@ public class Spawn : MonoBehaviour
     [SerializeField] private GameObject enemy;
     [SerializeField] private float tiempoEntreSpawns = 3f;
 
-
-
-    void Start()
+    private void Start()
     {
-        StartCoroutine(SpawnEnemy(tiempoEntreSpawns, enemy));
+        StartCoroutine(SpawnEnemy());
     }
-    IEnumerator SpawnEnemy(float intervalo, GameObject enemy)
+
+    IEnumerator SpawnEnemy()
     {
-        yield return new WaitForSeconds(intervalo);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f, 5), Random.Range(-6f, 6f),0), Quaternion.identity);
-        StartCoroutine(SpawnEnemy(intervalo, newEnemy));
+        while (true)
+        {
+            yield return new WaitForSeconds(tiempoEntreSpawns);
+
+            GameObject enemigo = Instantiate(enemy, transform.position, transform.rotation);
+        }
     }
 }

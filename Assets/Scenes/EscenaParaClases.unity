@@ -9193,6 +9193,10 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5452326198831814172, guid: f4dbd1df42392b84f9d26ba371be8f2c, type: 3}
+      propertyPath: escena
+      value: EscenaParaClases
+      objectReference: {fileID: 0}
     - target: {fileID: 9221937191791275081, guid: f4dbd1df42392b84f9d26ba371be8f2c, type: 3}
       propertyPath: m_Name
       value: enemigo
@@ -11412,8 +11416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b681743bcef71a40bcf2f63ce806ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawn
-  enemy: {fileID: 9221937191791275081, guid: f4dbd1df42392b84f9d26ba371be8f2c, type: 3}
-  tiempoEntreSpawns: 5
 --- !u!4 &2090467689
 Transform:
   m_ObjectHideFlags: 0
