@@ -9,13 +9,10 @@ public class Sonidos
 
     public bool loop;
 
-    [Range(0,1)]
+    [Range(0, 1)]
     public float volume;
 
     [HideInInspector]
     public AudioSource audioSource;
 
-    //public Sprite[] prit;
-    //public int decena = 5;
-    //public int unidad = 9;
 }
