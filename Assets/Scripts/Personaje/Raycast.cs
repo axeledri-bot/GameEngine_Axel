@@ -34,9 +34,12 @@ public class Raycast : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
-            GameObject clone = Instantiate(instanceBullet,shootBullet.position,instanceBullet.transform.rotation);
-            clone.GetComponent<Rigidbody>().AddForce(transform.forward * fuerzaBala);
-            Destroy(clone,10);
+            if (GameManager.instance.GastarBala())
+            {
+                GameObject clone = Instantiate(instanceBullet, shootBullet.position, instanceBullet.transform.rotation);
+                clone.GetComponent<Rigidbody>().AddForce(transform.forward * fuerzaBala);
+                Destroy(clone, 10);
+            }
             //if (Physics.Raycast(shootPoint.position, transform.forward, out hit, 100, enemyMask))
             //{
             //    Debug.Log(hit.transform.name);
