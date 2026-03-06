@@ -14,6 +14,9 @@ public class Raycast : MonoBehaviour
     [SerializeField]private LayerMask enemyMask;
     //[SerializeField]private GameObject instanceObject;
     [SerializeField]private GameObject instanceBullet;
+    //[SerializeField]private GameObject instanceParticles;
+
+    
     private void Start()
     {
         shootPoint = transform.parent;
@@ -36,7 +39,9 @@ public class Raycast : MonoBehaviour
         {
             if (GameManager.instance.GastarBala())
             {
+                
                 GameObject clone = Instantiate(instanceBullet, shootBullet.position, instanceBullet.transform.rotation);
+                //GameObject gameObject = Instantiate(instanceParticles, shootBullet.position, instanceParticles.transform.rotation);
                 clone.GetComponent<Rigidbody>().AddForce(transform.forward * fuerzaBala);
                 Destroy(clone, 10);
             }
